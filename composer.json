@@ -19,7 +19,6 @@
     "extra": {
         "class": "Poseidon2\\Composer\\ModuleInstallerPlugin"
     },
-    "minimum-stability": "stable",
     "require": {
         "php": "^8.3",
 
