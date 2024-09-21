@@ -2,7 +2,7 @@
     "name": "poseidon2/composer-module-installer",
     "description": "Poseidon Module Installer",
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "composer-plugin",
     "keywords": ["composer", "composer-plugin", "composer-installer"],
     "authors": [
