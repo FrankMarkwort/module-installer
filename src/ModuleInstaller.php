@@ -33,6 +33,7 @@ class ModuleInstaller extends LibraryInstaller
      */
     protected function getPackageBasePath(PackageInterface $package)
     {
+        var_dump($this->composer->getPackage());
         if ($this->composer->getPackage()->getPrettyName() === 'poseidon/poseidon') {
             $ssp_path = ".";
         } else {
