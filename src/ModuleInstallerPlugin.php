@@ -19,6 +19,7 @@ class ModuleInstallerPlugin implements PluginInterface
     {
         $this->io = $io;
         $this->installer = new ModuleInstaller($io, $composer);
+        var_dump($this->installer);
         $composer->getInstallationManager()->addInstaller($this->installer);
     }
 
