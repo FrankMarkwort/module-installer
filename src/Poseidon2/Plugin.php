@@ -12,7 +12,7 @@ class Plugin implements PluginInterface
 
     public function activate(Composer $composer, IOInterface $io): void
     {
-        echo "akrivate !!!\n";
+        echo "aktivate !!!\n";
         $this->installer = new Installer($io, $composer);
         $composer->getInstallationManager()->addInstaller($this->installer);
     }
