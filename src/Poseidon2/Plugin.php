@@ -8,24 +8,24 @@ use Composer\Plugin\PluginInterface;
 
 class Plugin implements PluginInterface
 {
-#    private $installer;
+    private $installer;
 
     public function activate(Composer $composer, IOInterface $io): void
     {
-        echo "akrivate \n";
-        //$this->installer = new Installer($io, $composer);
-        //$composer->getInstallationManager()->addInstaller($this->installer);
+        echo "akrivate !!!\n";
+        $this->installer = new Installer($io, $composer);
+        $composer->getInstallationManager()->addInstaller($this->installer);
     }
 
     public function deactivate(Composer $composer, IOInterface $io): void
     {
-        echo "deactivate\n";
+        echo "deactivate !!!\n";
         #$composer->getInstallationManager()->removeInstaller($this->installer);
     }
 
     public function uninstall(Composer $composer, IOInterface $io): void
     {
-        echo "uninstall\n";
+        echo "uninstall !!!\n";
     }
 }
 
