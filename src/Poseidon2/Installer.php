@@ -8,7 +8,7 @@ use \InvalidArgumentException;
 
 class Installer extends LibraryInstaller
 {
-    public const array SUPPORTED = ['poseidon2-assets', 'poseidon2-module'];
+    public const array SUPPORTED = ['poseidon-assets', 'poseidon-module'];
     public const string MIXED_CASE = 'ssp-mixedcase-module-name';
 
     public function getInstallPath(PackageInterface $package): string
