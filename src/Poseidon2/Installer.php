@@ -30,7 +30,7 @@ class Installer extends LibraryInstaller
 
 
         $name = $package->getPrettyName();
-        if (!preg_match('@^.*/poseidon2-(module|assets)-(.+)$@', $name, $matches)) {
+        if (!preg_match('@^.*/poseidon2-(module|assets)-(cron|realtime)-(.+)$@', $name, $matches)) {
             throw new InvalidArgumentException(
                 sprintf(
                     'Unable to install module %s, package name must be on the form "VENDOR/poseidon2-(module|assets)-MODULENAME".',
@@ -38,7 +38,7 @@ class Installer extends LibraryInstaller
                 )
              );
         }
-        if (count($matches) !== 4) {
+        if (count($matches) !== 3) {
              throw new InvalidArgumentException();
         }
 
