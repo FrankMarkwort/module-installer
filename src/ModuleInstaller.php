@@ -96,6 +96,8 @@ class ModuleInstaller extends LibraryInstaller
                 InvalidArgumentException::class
             );
             $moduleDir = $mixedCaseModuleName;
+
+
         }
 
         switch ($moduleType) {

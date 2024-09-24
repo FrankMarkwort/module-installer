@@ -20,7 +20,7 @@ class Plugin implements PluginInterface
     public function deactivate(Composer $composer, IOInterface $io): void
     {
         echo "deactivate !!!\n";
-        #$composer->getInstallationManager()->removeInstaller($this->installer);
+        $composer->getInstallationManager()->removeInstaller($this->installer);
     }
 
     public function uninstall(Composer $composer, IOInterface $io): void
