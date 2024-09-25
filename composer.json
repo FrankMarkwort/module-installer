@@ -2,7 +2,7 @@
     "name": "poseidon2/composer-module-installer",
     "description": "Poseidon Module Installer",
     "license": "MIT",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "type": "composer-plugin",
     "keywords": ["composer", "composer-plugin", "composer-installer"],
     "authors": [
@@ -23,8 +23,7 @@
     },
     "require": {
         "php": "^8.3",
-        "composer-plugin-api": "@stable",
-        "simplesamlphp/assert": "^v1.1.3"
+        "composer-plugin-api": "@stable"
     },
     "require-dev": {
         "composer/composer": "^2.7.9"
